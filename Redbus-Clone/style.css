@@ -1,0 +1,490 @@
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html, body {
+  overflow-x: hidden;
+}
+
+/* ===== Main Container ===== */
+.main {
+  width: 100%;
+  background-color: rgb(252, 249, 249);
+}
+
+/* ===== Navbar ===== */
+.main-nav {
+  width: 100%;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.nav {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .left,
+.nav .right {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.nav img {
+  width: 50px;
+}
+.bus-logo img {
+  height: 27px;
+  width: 50px;
+  margin-top: 5px;
+}
+
+/* ===== Hero Section ===== */
+.background-bus {
+  background: url("assests/HomeBanner.webp") center/cover no-repeat;
+  height: 300px;
+  position: relative;
+}
+.background-bus-content {
+  width: 85%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.background-bus-content h1 {
+  font-size: 3em;
+  color: #fff;
+}
+
+/* ===== From-To Bar ===== */
+.from-to-bar {
+  width: 85%;
+  background: #fff;
+  height: 100px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: -3em;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.add-address {
+  display: flex;
+  border: 1px solid #000;
+  border-radius: 10px;
+  height: 50%;
+  width: 78%;
+  align-items: center;
+  margin: auto 10px;
+}
+.add-address input {
+  flex: 1;
+  margin: 3px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.input-from,
+.input-To {
+  border-right: 1px solid rgb(48, 41, 41);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+.date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+.date-content {
+  display: flex;
+  align-items: center;
+}
+.date-journey {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+.date-btn {
+  display: flex;
+  gap: 5px;
+}
+.date-btn button {
+  width: 80px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  background-color: #fed9d5;
+}
+
+/* ===== Women Booking ===== */
+.women {
+  display: flex;
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: 10px;
+  height: 50%;
+  margin: auto 10px;
+  padding: 5px;
+}
+.w-icon img {
+  height: 50px;
+  width: 50px;
+}
+
+/* ===== Search Buses Button ===== */
+.buses-btn {
+  position: absolute;
+  bottom: -4em;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  height: 38px;
+  background-color: rgb(227, 66, 66);
+  border-radius: 20px;
+  padding: 5px;
+  text-align: center;
+}
+.buses-btn button {
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 18px;
+}
+
+/* ===== Book Train ===== */
+.book-train {
+  width: 85%;
+  margin: 100px auto 0 auto;
+}
+.book-train-content {
+  display: flex;
+  gap: 10px;
+}
+
+/* ===== Offer Banner ===== */
+.offer {
+  width: 100%;
+  height: 80px;
+  margin-top: 10px;
+}
+.offer-content {
+  width: 85%;
+  height: 80px;
+  margin: auto;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ebebed;
+  padding: 10px;
+}
+.offer-content .left {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.offer-content .left p span {
+  color: rgb(15, 209, 57);
+}
+.offer-content .left .sep,
+.offer-content .left .oct {
+  width: 150px;
+  text-align: center;
+  padding: 5px;
+  background: white;
+  border-radius: 10px;
+}
+.offer-content .right .pink {
+  width: 250px;
+  height: 30px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #fed9d5;
+  align-content: center;
+}
+
+.offer-images{
+
+}
+.img-1{
+
+  width: 100%;
+  background-color: #000;
+  background-image: url('./assests/296x200.png');
+}
+.img-2{
+
+  width: 100%;
+  background-color: #000;
+  background-image: url('./assests/Android-iOS.png');
+}
+.img-3{
+
+  width: 100%;
+  background-color: #000;
+  background-image: url('./assests/296x200.png');
+}
+.img-4{
+
+  width: 100%;
+  background-color: #000;
+  background-image: url('./assests/Android-iOS.png');
+}
+
+.offer-whatsnew{
+
+ width: 100%;
+}
+.sub-offer-whatsnew{
+   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 160px;
+  
+  gap: 15px;
+}
+.img-new1{
+  
+  width: 100%;
+  background-color: #000;
+  background-image: url('./assests/296x200.png');
+  border-radius: 15px;
+}
+
+.img-new2{
+    width: 100%;
+  background-color: #000;
+  background-image: url('./assests/Android-iOS.png');
+    border-radius: 15px;
+
+}
+
+.img-new3{
+  width: 100%;
+  background-color: #000;
+  background-image: url('./assests/Android-iOS.png');
+    border-radius: 15px;
+
+}
+
+.img-new4{
+  width: 100%;
+  background-color: #000;
+  background-image: url('./assests/Android-iOS.png');
+    border-radius: 15px;
+
+}
+
+/* ===== Sardar Image ===== */
+.sardar-image {
+  background-color: #adf2b3;
+  margin: 20px 0;
+}
+.sardar-content {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+/* ===== Offers For You ===== */
+.offersforyou {
+  margin-top: 50px;
+}
+.offersforyou-content {
+  width: 80%;
+  margin: auto;
+}
+.offersforyou-content .offer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.offersforyou-btns button {
+  width: 70px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+}
+.offer-images {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px 0 50px 0;
+}
+.offer-images div {
+  width: 24%;
+  height: 160px;
+  border-radius: 10px;
+  padding: 10px;
+  background-size: cover;
+  background-position: center;
+}
+.offer-images .bus {
+  width: 60px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 5px;
+}
+.offer-images .bottom {
+  margin-top: 30px;
+  background: white;
+  border-radius: 30px;
+  width: 80px;
+  height: 30px;
+  border: none;
+}
+
+/* ===== Testimonial ===== */
+.testimonial {
+  margin: 30px 0;
+  background-color: white;
+}
+.uper-test {
+  display: flex;
+  flex-wrap: wrap;
+}
+.test {
+  border: 1px solid;
+  width: 250px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+}
+.test .bottom {
+  margin-top: 30px;
+}
+
+.getred-bus-main{
+  
+  background-color: white;
+  display: flex;
+  border-radius: 10px;
+  width: 85%;
+  margin: 0 auto ;
+  flex: 1;
+  gap: 50px;
+
+
+    
+}
+
+.get-redbus-subpart{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+#get-redbus{
+    position: relative;
+    left: 110px;
+}
+.btn-download{
+    width: 200px;
+    height: 35px;
+    background-color: rgb(73, 73, 221);
+    border-radius: 15px;
+}
+.ticket-booking-main-container{
+    display: flex;
+    background-color: white;
+    width: 100%;
+}
+.online-ticket{
+    width: 85%;
+    margin: 0 auto;
+   font-size: 18px;
+
+
+}
+#online-tick-h1{
+position: relative;
+left: 100px;
+bottom: 3px;
+}
+.booking-reasons{
+    width: 85%;
+    margin: 0 auto;
+}
+#booking-h1{
+    position: relative;
+    left: 100px;
+}
+/* ===== FAQs ===== */
+.faqs {
+  width: 85%;
+  margin: auto;
+}
+.faqs-points {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+.faqs details {
+  padding: 15px;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background-color: #f2f2f8;
+  margin-top: 30px;
+}
+.popular-bus {
+  width: 85%;
+  margin: auto;
+}
+.popular-bus details {
+  padding: 15px;
+}
+.footer-about {
+  width: 85%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-about h3 {
+  margin-bottom: 10px;
+}
+.footer-about p {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.l-image {
+  width: 85%;
+  display: flex;
+  gap: 10px;
+  margin: 20px auto;
+}
+.l-image img {
+  width: 50px;
+}
+.copyright {
+  width: 85%;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.copyright img {
+  width: 30px;
+  margin-left: 10px;
+}
